@@ -119,3 +119,10 @@ VD: userActive, userSuspend
 ### Đóng góp
 
 Nếu bạn cảm thấy rằng PHPEnum có thể trở nên ngầu hơn nữa, hãy đóng góp các ý tưởng của bạn. Chúng tôi luôn chào đón.
+
+### Donate
+
+Tôi rất vui nếu bạn donate. Đó sẽ là nguồn động lực to lớn giúp tôi có thể tạo ra những điều thú vị hơn nữa. Cảm ơn rất
+rất nhiều
+
+<img src="https://raw.githubusercontent.com/ducconit/ducconit/master/assets/qr/mono.jpg" alt="Donate QR Mono" width="200px"/>
