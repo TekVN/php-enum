@@ -1,6 +1,12 @@
 {
     "name": "dnt/php-enum",
     "description": "Enum utility for you.",
+    "keywords": [
+        "php",
+        "enum",
+        "DNT",
+        "ducconit"
+    ],
     "type": "library",
     "license": "MIT",
     "autoload": {
