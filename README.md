@@ -1,5 +1,12 @@
 # Welcome to PHPEnum - Dạo này bạn quẩy enum ra sao?
 
+<p align="center">
+<a href="https://github.com/ducconit/php-enum/actions"><img src="https://github.com/ducconit/php-enum/actions/workflows/test.yml/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/dnt/php-enum"><img src="https://img.shields.io/packagist/dt/dnt/php-enum" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/dnt/php-enum"><img src="https://img.shields.io/packagist/v/dnt/php-enum" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/dnt/php-enum"><img src="https://img.shields.io/github/license/ducconit/php-enum" alt="License"></a>
+</p>
+
 Bạn đã bao giờ phải xử lý enum trong PHP và cảm thấy mệt mỏi với sự lộn xộn và phiền toái chưa? Đừng lo lắng nữa vì
 PHPEnum đã sẵn sàng giúp bạn thổi bay những lo lắng!
 
