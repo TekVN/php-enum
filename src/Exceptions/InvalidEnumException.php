@@ -1,6 +1,6 @@
 <?php
 
-namespace DNT\Enum\Exceptions;
+namespace TekVN\Enum\Exceptions;
 
 use InvalidArgumentException;
 use Throwable;

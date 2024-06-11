@@ -1,17 +1,16 @@
 {
-    "name": "dnt/php-enum",
+    "name": "tekvn/php-enum",
     "description": "Enum utility for you.",
     "keywords": [
         "php",
         "enum",
-        "DNT",
-        "ducconit"
+        "tekvn"
     ],
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "DNT\\Enum\\": "src/"
+            "TekVN\\Enum\\": "src/"
         }
     },
     "authors": [

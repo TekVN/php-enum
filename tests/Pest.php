@@ -1,6 +1,6 @@
 <?php
 
-use DNT\Enum\EnumUtilities;
+use TekVN\Enum\EnumUtilities;
 
 enum EnumString: string
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace DNT\Enum;
+namespace TekVN\Enum;
 
-use DNT\Enum\Exceptions\InvalidNameEnumException;
-use DNT\Enum\Exceptions\InvalidValueEnumException;
+use TekVN\Enum\Exceptions\InvalidNameEnumException;
+use TekVN\Enum\Exceptions\InvalidValueEnumException;
 use Throwable;
 
 trait EnumException

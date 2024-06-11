@@ -1,6 +1,6 @@
 <?php
 
-namespace DNT\Enum;
+namespace TekVN\Enum;
 
 use BadMethodCallException;
 
