@@ -7,6 +7,7 @@ use BadMethodCallException;
 trait EnumUtilities
 {
     use EnumJsonable;
+    use EnumComparable;
 
     public static function __callStatic(string $method, array $arguments): mixed
     {
