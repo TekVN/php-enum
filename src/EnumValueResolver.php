@@ -70,7 +70,7 @@ trait EnumValueResolver
 
     public static function getValues(): array
     {
-        return array_map(fn ($enum) => $enum->value, static::cases());
+        return array_map(fn ($enum) => $enum->value ?? $enum->name, static::cases());
     }
 
     public function toString(): string
