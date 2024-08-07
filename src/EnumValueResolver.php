@@ -68,6 +68,11 @@ trait EnumValueResolver
         return $enum->name;
     }
 
+    public static function getValues(): array
+    {
+        return array_map(fn ($enum) => $enum->value ?? $enum->name, static::cases());
+    }
+
     public function toString(): string
     {
         return (string) static::getValue($this, throw: false);
