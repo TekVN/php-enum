@@ -6,10 +6,9 @@ trait EnumComparable
 {
     public function is(mixed $value, bool $strict = true): bool
     {
-        $selfValue = self::getValue($this);
-        $targetValue = self::getValue($value);
+        $selfValue = self::getValue($this, strict: $strict);
+        $targetValue = self::getValue($value, strict: $strict);
         if (is_null($selfValue) || is_null($targetValue)) {
-            var_dump([$targetValue,$value]);
             return false;
         }
 

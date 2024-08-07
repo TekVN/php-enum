@@ -12,6 +12,7 @@ it('compare enum int', function () {
     $status = EnumInt::ACTIVE;
 
     expect($status->is('1'))->toBeFalse()
+        ->and($status->is('1', false))->toBeTrue()
         ->and($status->is(1))->toBeTrue()
         ->and($status->is(EnumInt::ACTIVE))->toBeTrue();
 });

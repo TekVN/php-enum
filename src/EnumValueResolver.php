@@ -37,13 +37,16 @@ trait EnumValueResolver
     /**
      * @throws Throwable
      */
-    public static function getValue(int|string|self $name, bool $throw = false): int|string|null
+    public static function getValue(int|string|self|null $name, bool $strict = true, bool $throw = false): int|string|null
     {
+        if (is_null($name)) {
+            return null;
+        }
         if ($name instanceof UnitEnum) {
             return static::getValueFromInstance($name);
         }
         if (is_int($name)) {
-            return static::tryFrom($name) ?? self::throwOrNull($name, $throw);
+            return static::getValue(static::tryFrom($name) ?? self::throwOrNull($name, $throw));
         }
 
         $enum = static::tryFromName($name);
@@ -53,10 +56,13 @@ trait EnumValueResolver
                 if (! is_numeric($name)) {
                     return self::throwOrNull($name, $throw);
                 }
-                return static::tryFrom((int) $name)?->value;
+                if ($strict && !is_int($name)) {
+                    return self::throwOrNull($name, $throw);
+                }
+                return static::getValue(static::tryFrom((int)$name) ?? self::throwOrNull($name, $throw));
             }
             if ($backingType?->getName() === 'string') {
-                return static::tryFrom($name)?->value;
+                return static::getValue(static::tryFrom($name) ?? self::throwOrNull($name, $throw));
             }
         }
         if (! $enum) {
