@@ -26,7 +26,7 @@ trait EnumValueResolver
         return $enum->name;
     }
 
-    protected static function throwOrNull(mixed $name, bool $throw = true): null
+    protected static function throwOrNull(mixed $name, bool $throw = true): mixed
     {
         if ($throw) {
             throw static::invalidValueException($name);
